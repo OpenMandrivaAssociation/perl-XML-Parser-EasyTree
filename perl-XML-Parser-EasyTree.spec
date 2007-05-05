@@ -1,6 +1,6 @@
 %define module 	XML-Parser-EasyTree
 %define version 0.01
-%define release %mkrel 8
+%define release %mkrel 9
 
 Summary:	%{module} perl module
 Name: 		perl-%{module}
@@ -15,12 +15,10 @@ BuildRequires:	perl(XML::Parser)
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 
-
 %description
 XML-Parser-EasyTree - adds a new "built-in" style called "EasyTree" to 
 XML::Parser.  Like XML::Parser's "Tree" style, setting this style causes 
 the parser to build a lightweight tree structure representing the XML document. 
-
 
 %prep
 %setup -q  -n %{module}-%{version}
@@ -28,7 +26,6 @@ the parser to build a lightweight tree structure representing the XML document.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor PREFIX=%{_prefix} 
 %{__make}
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
