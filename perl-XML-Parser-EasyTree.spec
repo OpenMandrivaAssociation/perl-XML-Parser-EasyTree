@@ -1,6 +1,6 @@
 %define module 	XML-Parser-EasyTree
 %define version 0.01
-%define release %mkrel 9
+%define release %mkrel 10
 
 Summary:	%{module} perl module
 Name: 		perl-%{module}
