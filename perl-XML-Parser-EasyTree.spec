@@ -12,6 +12,7 @@ URL:		http://search.cpan.org/dist/%{module}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl(XML::Parser)
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 
 %description
