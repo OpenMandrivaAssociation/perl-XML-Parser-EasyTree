@@ -18,7 +18,7 @@ BuildArch:	noarch
 %description
 XML-Parser-EasyTree - adds a new "built-in" style called "EasyTree" to 
 XML::Parser.  Like XML::Parser's "Tree" style, setting this style causes 
-the parser to build a lightweight tree structure representing the XML document. 
+the parser to build a lightweight tree structure representing the XML document.
 
 %prep
 %setup -q  -n %{module}-%{version}
