@@ -3,7 +3,7 @@
 
 Name: 		perl-%{upstream_name}
 Version:	0.01
-Release:	1
+Release:	2
 
 Summary:	%{upstream_name} perl module
 License: 	GPL+ or Artistic
@@ -14,7 +14,6 @@ Source0:	https://cpan.metacpan.org/authors/id/E/EB/EBOHLMAN/XML-Parser-EasyTree-
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl(XML::Parser)
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 XML-Parser-EasyTree - adds a new "built-in" style called "EasyTree" to 
@@ -25,7 +24,7 @@ the parser to build a lightweight tree structure representing the XML document.
 %setup -q  -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor PREFIX=%{_prefix} 
+perl Makefile.PL INSTALLDIRS=vendor PREFIX=%{_prefix} 
 %{__make}
 
 %install
