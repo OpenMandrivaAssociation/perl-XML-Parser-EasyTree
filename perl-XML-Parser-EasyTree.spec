@@ -3,7 +3,7 @@
 
 Name: 		perl-%{upstream_name}
 Version:	0.01
-Release:	2
+Release:	3
 
 Summary:	%{upstream_name} perl module
 License: 	GPL+ or Artistic
@@ -21,7 +21,7 @@ XML::Parser.  Like XML::Parser's "Tree" style, setting this style causes
 the parser to build a lightweight tree structure representing the XML document.
 
 %prep
-%setup -q  -n %{upstream_name}-%{upstream_version}
+%setup -q  -n XML-Parser-EasyTree-0.01
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor PREFIX=%{_prefix} 
